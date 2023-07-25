@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "parser": "eslint-plugin-coffeescript",
+  "parserOptions": { 
+    "parser": "@babel/eslint-parser",
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "plugins": ["coffeescript"],
+  "rules": { "eqeqeq": 2 },
+  "root": true
+}

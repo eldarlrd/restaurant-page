@@ -1,0 +1,38 @@
+{
+  "name": "restaurant-page",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "pretty": "prettier --write 'src/**/*.coffee'",
+    "style": "stylelint **/*.styl",
+    "lint": "eslint src --ext coffee --report-unused-disable-directives",
+    "format": "yarn pretty && yarn style --fix && yarn lint --fix",
+    "preview": "vite preview",
+    "deploy": "yarn build && gh-pages -b deploy -m 'build: Deployment' -d dist"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/eslint-parser": "^7.22.9",
+    "coffeescript": "^2.7.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-coffeescript": "^1.0.0",
+    "gh-pages": "^5.0.0",
+    "prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
+    "prettier-plugin-coffeescript": "^0.1.5",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-stylus": "^0.18.0",
+    "stylus": "^0.59.0",
+    "vite": "^4.4.5"
+  }
+}
