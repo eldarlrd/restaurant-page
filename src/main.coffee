@@ -1,1 +1,3 @@
-document.getElementById('app').innerHTML = '<h1>I love Coffee!</h1>'
+document.getElementById('app').innerHTML = '<h1>Hello World</h1>'
+
+console.log 'I love Coffee!'
