@@ -1,5 +1,7 @@
-import '@/main.styl'
+# @flow strict
+contentDiv = document.getElementById 'content'
 
-document.getElementById('app').innerHTML = '<h1>Hello World</h1>'
+if contentDiv != null
+  contentDiv.innerHTML = '<h1>Hello World</h1>'
 
 console.log 'I love Coffee!'
