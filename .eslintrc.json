@@ -8,6 +8,7 @@
     "eslint:recommended",
     "prettier"
   ],
+  "parserOptions": { "sourceType": "module" },
   "plugins": ["coffeescript"],
   "rules": { "eqeqeq": 2 },
   "root": true
