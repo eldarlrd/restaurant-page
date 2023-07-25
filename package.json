@@ -1,11 +1,13 @@
 {
   "name": "restaurant-page",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "yarn brew && vite",
+    "build": "yarn brew && vite build",
+    "brew": "coffee -c -o src/brewed src/*.coffee",
+    "brewing": "coffee -w -c -o src/brewed src/*.coffee",
     "pretty": "prettier --write 'src/**/*.coffee'",
     "style": "stylelint **/*.styl",
     "lint": "eslint src --ext coffee --report-unused-disable-directives",
@@ -20,8 +22,6 @@
     "arrowParens": "avoid"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/eslint-parser": "^7.22.9",
     "coffeescript": "^2.7.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
