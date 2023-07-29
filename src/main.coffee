@@ -1,9 +1,9 @@
 # @flow strict
-import Navbar from '@/components/navbar.js'
-import Footer from '@/components/footer.js'
+import Navbar from '@/components/ui/navbar.js'
 import Home from '@/components/home.js'
 # import Menu from '@/components/menu.js'
 # import Contact from '@/components/contact.js'
+import Footer from '@/components/ui/footer.js'
 contentDiv = document.getElementById 'content'
 
 if contentDiv != null
