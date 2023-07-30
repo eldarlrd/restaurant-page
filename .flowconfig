@@ -1,5 +1,6 @@
 [options]
 module.name_mapper='@' -> '<PROJECT_ROOT>/src/brewed'
+module.name_mapper='#' -> '<PROJECT_ROOT>/src/assets'
 
 [strict]
 nonstrict-import

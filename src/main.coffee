@@ -29,3 +29,5 @@ tabButton.forEach (e) ->
         Contact()
       else
         Home()
+
+console.log 'Sleep is a symptom of caffeine deprivation.'

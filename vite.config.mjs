@@ -4,6 +4,9 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   base: '/restaurant-page/',
   resolve: {
-    alias: { '@': '/src/brewed' }
+    alias: {
+      '@': '/src/brewed',
+      '#': '/src/assets'
+    }
   }
 });
