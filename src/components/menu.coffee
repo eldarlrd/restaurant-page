@@ -1,16 +1,16 @@
 # @flow strict
-import americano from '#/menu/americano.jpg'
+import americano from '#/menu/americano.webp'
 import cappuccino from '#/menu/cappuccino.webp'
 import latte from '#/menu/latte.webp'
 import espresso from '#/menu/espresso.webp'
-import croissant from '#/menu/chocolate-croissant.jpg'
-import cheesecake from '#/menu/lemon-cheesecake.jpg'
-import pannaCotta from '#/menu/strawberry-panna-cotta.jpg'
+import croissant from '#/menu/chocolate-croissant.webp'
+import cheesecake from '#/menu/lemon-cheesecake.webp'
+import pannaCotta from '#/menu/strawberry-panna-cotta.webp'
 import sandwich from '#/menu/turkey-sandwich.webp'
 
 export default Menu = () ###: string ### -> "
-  <h1 class='menu'>Menu</h1>
-  <h2 class='menu'>Our Finest Selection</h2>
+  <h1>Menu</h1>
+  <h2>Our Finest Selection</h2>
   <div class='menu'>
     <figure>
       <img alt='Americano' src=#{americano}>

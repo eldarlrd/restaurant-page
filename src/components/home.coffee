@@ -1,10 +1,10 @@
 # @flow strict
-import coffeeBeans from '#/coffee-beans.jpg'
+import coffeeBeans from '#/coffee-beans.webp'
 
 export default Home = () ###: string ### -> "
   <i class='home fa-solid fa-mug-hot'></i>
-  <h1 class='home'>The Only Restaurant</h1>
-  <h2 class='home'>Best Coffee in the World</h2>
+  <h1>The Only Restaurant</h1>
+  <h2>Best Coffee in the World</h2>
   <img
     class='home'
     alt='Roast Coffee Beans'
