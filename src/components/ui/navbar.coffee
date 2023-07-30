@@ -7,13 +7,13 @@ export default Navbar = () ###: string ### ->
       TOR
     </p>
     <span>
-      <button onclick=''>
+      <button class='tab active-tab' id='home'>
         Home
       </button>
-      <button onclick=''>
+      <button class='tab' id='menu'>
         Menu
       </button>
-      <button onclick=''>
+      <button class='tab' id='contact'>
         Contact
       </button>
     </span>
