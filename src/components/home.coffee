@@ -10,13 +10,13 @@ export default Home = () ###: string ### -> "
     alt='Roast Coffee Beans'
     src=#{coffeeBeans}
   >
-  <quote class='home'>
+  <blockquote class='home'>
     “I can’t stop drinking the coffee.
     I stop drinking the coffee,
     I stop doing the standing, and the walking,
     and the words-putting-into-sentences doing.”
     <p>- Lorelai Gilmore</p>
-  </quote>
+  </blockquote>
 "
 
 Home()
