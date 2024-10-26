@@ -1,0 +1,22 @@
+{
+  "name": "Restaurant Page",
+  "short_name": "Restaurant Page",
+  "dir": "ltr",
+  "lang": "en",
+  "categories": [
+    "food"
+  ],
+  "display": "minimal-ui",
+  "orientation": "natural",
+  "theme_color": "#8b4513",
+  "background_color": "#fff8dc",
+  "description": "The Only Restaurant Page",
+  "start_url": "https://eldarlrd.github.io/restaurant-page/",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

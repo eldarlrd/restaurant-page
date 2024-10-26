@@ -1,20 +1,26 @@
 {
   "name": "restaurant-page",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "yarn brew && vite",
     "build": "yarn brew && yarn flow check && vite build",
+    "preview": "vite preview",
+    "deployer": "yarn build && gh-pages -b prod -m 'build(prod): deployment' -d dist",
     "brew": "coffee -b --no-header -c -o src/brewed src/",
     "brew:watch": "coffee -w -b --no-header -c -o src/brewed src/",
     "flow:watch": "flow-watch",
-    "pretty": "prettier --write 'src/**/*.coffee'",
-    "style": "stylelint **/*.styl",
-    "lint": "eslint src --ext coffee --report-unused-disable-directives",
-    "format": "yarn pretty && yarn style --fix && yarn lint --fix",
-    "preview": "vite preview",
-    "deploy": "yarn build && gh-pages -b deploy -m 'build: Deployment' -d dist"
+    "lint": "eslint src --ext .coffee",
+    "style": "stylelint 'src/**/*.{css,pcss,scss,sass,less,styl}'",
+    "pretty": "prettier 'src/**/*.coffee' --write",
+    "format": "yarn lint --fix && yarn style --fix && yarn pretty"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-stylus/standard"
+    ]
   },
   "prettier": {
     "singleQuote": true,
@@ -24,19 +30,20 @@
   },
   "devDependencies": {
     "coffeescript": "^2.7.0",
-    "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-coffeescript": "^1.0.0",
-    "flow-bin": "^0.213.1",
+    "flow-bin": "^0.250.0",
     "flow-watch": "^2.0.0",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.2.0",
+    "globals": "^15.11.0",
     "nib": "^1.2.0",
     "prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
     "prettier-plugin-coffeescript": "^0.1.5",
-    "stylelint": "^15.10.2",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-stylus": "^0.18.0",
-    "stylus": "^0.59.0",
-    "vite": "^4.4.5"
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-stylus": "^1.0.0",
+    "stylus": "^0.64.0",
+    "vite": "^5.4.10"
   }
 }

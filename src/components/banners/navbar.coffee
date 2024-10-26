@@ -6,14 +6,17 @@ export default Navbar = () ###: string ### ->
       <i class='fa-solid fa-mug-hot'></i>
       TOR
     </p>
+
     <span>
-      <button class='tab active-tab' id='home'>
+      <button type='button' class='tab active-tab' id='home'>
         Home
       </button>
-      <button class='tab' id='menu'>
+
+      <button type='button' class='tab' id='menu'>
         Menu
       </button>
-      <button class='tab' id='contact'>
+
+      <button type='button' class='tab' id='contact'>
         Contact
       </button>
     </span>

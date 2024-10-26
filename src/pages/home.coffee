@@ -5,11 +5,14 @@ export default Home = () ###: string ### -> "
   <i class='home fa-solid fa-mug-hot'></i>
   <h1>The Only Restaurant</h1>
   <h2>Best Coffee in the World</h2>
+
   <img
+    loading='eager'
     class='home'
     alt='Roast Coffee Beans'
     src=#{coffeeBeans}
-  >
+  />
+
   <blockquote class='home'>
     “I can’t stop drinking the coffee.
     I stop drinking the coffee,

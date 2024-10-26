@@ -1,7 +1,7 @@
 {
+  "root": true,
   "env": {
     "browser": true,
-    "commonjs": true,
     "es2021": true
   },
   "extends": [
@@ -10,6 +10,5 @@
   ],
   "parserOptions": { "sourceType": "module" },
   "plugins": ["coffeescript"],
-  "rules": { "eqeqeq": 2 },
-  "root": true
+  "rules": { "prefer-const": 2, "eqeqeq": 2 }
 }
