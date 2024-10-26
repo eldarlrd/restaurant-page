@@ -3,6 +3,14 @@
   "private": true,
   "version": "1.1.0",
   "type": "module",
+  "keywords": [
+    "restaurant"
+  ],
+  "description": "The Only Restaurant Page",
+  "repository": "github:eldarlrd/restaurant-page",
+  "homepage": "https://eldarlrd.github.io/restaurant-page",
+  "author": "Eldar Pashazade <eldarlrd@pm.me> (https://eldarlrd.github.io)",
+  "license": "AGPL-3.0-only",
   "scripts": {
     "dev": "yarn brew && vite",
     "build": "yarn brew && yarn flow check && vite build",
