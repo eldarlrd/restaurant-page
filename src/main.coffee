@@ -1,4 +1,5 @@
 # @flow strict
+
 ###
  # @license AGPL-3.0-only
  # Restaurant Page - The Only Restaurant Page
